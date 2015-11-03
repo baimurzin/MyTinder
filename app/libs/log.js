@@ -3,18 +3,32 @@
  */
 var winston = require('winston');
 
-function getLogger(module) {
-    var path = module.filename.split('\\').slice(-2).join('\\'); //отобразим метку с именем файла, который выводит сообщение
+function logger(module) {
 
     return new winston.Logger({
         transports : [
+            new winston.transports.File({
+                level: 'info',
+                filename: process.cwd() + '/logs/all.log',
+                handleException: true,
+                json: true,
+                maxSize: 5242880, //5mb
+                maxFiles: 2,
+                colorize: false
+            }),
             new winston.transports.Console({
-                colorize:   true,
-                level:      'debug',
-                label:      path
+                level: 'debug',
+                label: getFilePath(module),
+                handleException: true,
+                json: false,
+                colorize: true
             })
         ]
     });
 }
 
-module.exports = getLogger;
+function getFilePath (module) {
+    return module.filename.split('\\').slice(-2).join('\\');
+}
+
+module.exports = logger;
