@@ -24,5 +24,12 @@
       "username" : "apiuser",
       "password" : "password"
     }
+  },
+  "auth": {
+    "vkontakte": {
+      "clientID": "5138029",
+      "clientSecret": "Tdh48S1bV2qWWDTpE7rY",
+      "callbackURL": "http://192.168.0.101:1338/api/auth/vkontakte/callback"
+    }
   }
 }

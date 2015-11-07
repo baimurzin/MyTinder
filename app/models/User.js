@@ -6,7 +6,10 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var UserSchema = new Schema({
-    name: String
+    name: String,
+    created: {type: Date, default: Date.now},
+    access_token: {type:String, unique: true, required: true},
+    vkontakteId: {type: String, required:true}
 });
 
 module.exports = mongoose.model('User', UserSchema);

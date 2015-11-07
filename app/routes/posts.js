@@ -13,13 +13,13 @@ router.route('/')
             img_path: req.body.img_path,
             msg_text: req.body.msg_text,
             location: req.body.location,
-            posted_by: testUser._id,
+            posted_by: '5637cfef7d61c964232c6372',
             comments: [{
                 text: "Norm",
-                posted_by: testUser._id
+                posted_by: '5637cfef7d61c964232c6372'
             }, {
                 text: "5 like",
-                posted_by: testUser._id
+                posted_by: '5637cfef7d61c964232c6372'
             }]
         });
         post.save(function (err) {
