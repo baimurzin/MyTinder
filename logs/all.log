@@ -74,3 +74,13 @@
 {"$__":{"strictMode":true,"getters":{},"wasPopulated":false,"activePaths":{"paths":{"vkontakteId":"init","access_token":"init","created":"init","__v":"init","name":"init","_id":"init"},"states":{"ignore":{},"default":{},"init":{"__v":true,"created":true,"access_token":true,"vkontakteId":true,"name":true,"_id":true},"modify":{},"require":{}},"stateNames":["require","modify","init","default","ignore"]},"emitter":{"domain":null,"_events":{},"_eventsCount":0,"_maxListeners":0}},"isNew":false,"_doc":{"created":"2015-11-07T14:59:54.442Z","__v":0,"access_token":"0159f5d35bf7d19532df15ee9b0a0d9efa606051716814c1ce20ac8c72cd954f8bd0b3ed26c90b9660195","vkontakteId":"91195019","name":"Denr Abdullin","_id":{"_bsontype":"ObjectID","id":"V>\u0011ê*Gá¬\u0019v©í"}},"_pres":{"$__original_save":[null,null]},"_posts":{"$__original_save":[]},"level":"info","message":"auth","timestamp":"2015-11-07T14:59:54.611Z"}
 {"level":"info","message":"server started on port 1338","timestamp":"2015-11-07T15:01:13.467Z"}
 {"level":"info","message":"server started on port 1338","timestamp":"2015-11-07T15:03:26.159Z"}
+{"level":"info","message":"server started on port 1338","timestamp":"2015-11-08T00:20:25.173Z"}
+{"level":"info","message":"server started on port 1338","timestamp":"2015-11-08T00:22:43.343Z"}
+{"level":"info","message":"server started on port 1338","timestamp":"2015-11-08T00:24:31.766Z"}
+{"level":"info","message":"server started on port 1338","timestamp":"2015-11-08T00:25:10.397Z"}
+{"level":"info","message":"server started on port 1338","timestamp":"2015-11-08T00:27:30.885Z"}
+{"level":"info","message":"server started on port 1338","timestamp":"2015-11-08T03:06:35.442Z"}
+{"level":"info","message":"server started on port 1338","timestamp":"2015-11-08T03:08:07.428Z"}
+{"level":"info","message":"server started on port 1338","timestamp":"2015-11-08T04:24:36.772Z"}
+{"level":"info","message":"server started on port 1338","timestamp":"2015-11-11T20:40:26.507Z"}
+{"level":"info","message":"server started on port 1338","timestamp":"2015-11-11T20:41:58.897Z"}

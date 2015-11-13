@@ -11,6 +11,7 @@ var PostSchema = new Schema({
     img_path: String,
     msg_text: String,
     location: {type: [Number], index: '2d'},
+    views: {type: Number, default: 0},
     posted_by: {type: Schema.Types.ObjectId, ref: 'User'},
     comments: [{
         text: String,

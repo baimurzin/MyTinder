@@ -53,6 +53,21 @@ router.route('/:post_id')
                     res.status(500).json(err);
                 res.status(200).json(post);
             })
+    })
+    .put(function (req, res) {
+        var post_id = req.params.post_id;
+        Post.findOne({ '_id' : post_id})
+            .exec(function (err, post) {
+                if (err) {
+                    res.status(500).json(err);
+                }
+                post.views += 1;
+                post.save(function (err) {
+                    if (err)
+                        res.status(500).json(err);
+                    res.status(200).end();
+                })
+            })
     });
 
 module.exports = router;
