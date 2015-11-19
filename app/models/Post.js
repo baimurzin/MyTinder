@@ -11,12 +11,12 @@ var PostSchema = new Schema({
     img_path: String,
     msg_text: String,
     location: {type: [Number], index: '2d'},
-    views: {type: Number, default: 0},
+    views: [{type: Schema.Types.ObjectId, ref: 'User'}],
+    viewsCount: {type: Number, default: 0},
+    likes: [{type: Schema.Types.ObjectId, ref: 'User'}],
+    likesCount: {type: Number, default: 0},
     posted_by: {type: Schema.Types.ObjectId, ref: 'User'},
-    comments: [{
-        text: String,
-        posted_by: {type: Schema.Types.ObjectId, ref: 'User'}
-    }]
+    comments: [{type: Schema.Types.ObjectId, ref: 'Comment'}]
 }, {
     toObject: { virtuals: true },
     toJSON: { virtuals: true }
